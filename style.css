@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+body{
+
+    
+    @import url:('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    height:100vh;
+    width:100vw;
+    background-color:hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.profile-container{
+    height: 33rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(0, 0%, 12%);
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    gap: 1rem;
+    padding: 2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    
+}
+
+
+
+.image img {
+    align-items: center; 
+    width: 25%;
+    border-radius: 40px;
+    margin-left: 6.8rem;
+
+}
+ 
+
+
+#Name h2{
+text-align: center;
+padding-top: 2px;
+font-weight: 700;
+
+}
+
+#Name p{
+    padding:10px 0 5px 0;
+    color: hsl(75, 94%, 57%);
+    text-align: center;
+
+}
+
+#brand{
+text-align: center;
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+    text-align: center;
+}
+.social-media p{
+    border: 1px solid black;
+    width: 96%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:  hsl(0, 0%, 20%);
+}
+
+.social-media p:hover {
+ background-color: hsl(75, 94%, 57%);
+    color:  hsl(0, 0%, 8%);
+    font-weight: 400;
+}
