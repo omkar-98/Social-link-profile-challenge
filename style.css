@@ -1,45 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+}
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
 
-<link rel="stylesheet" href="style.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+body{
+    font-family: "Inter", sans-serif;
+}
 
-<body>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <div class="container">
+.container{
+    height:100vh;
+    width:100vw;
+    background-color:hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
 
-    <div class="profile-container">
+.profile-container{
+    height: 37rem;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px hsl(0, 0%, 12%);
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    gap: 1rem;
+    padding: 2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    
+}
 
-      <div class="image">
-        <img src="assets/images/avatar-jessica.jpeg" alt="user-avatar">
-      </div>
-   
-        <div id="Name">
-          <h2>Jessica Randall</h2>
-       
-        <p>London, United Kingdom</p>
-      </div>
-      <p id="brand">"Front-end developer and avid reader."</p>  
 
-  
-        <div class="social-media">
 
-          <p>GitHub</p>
-          <p>Frontend Mentor</p>
-          <p> LinkedIn</p>
-          <p>Twitter</p>
-          <p>Instagram</p  
-        </div>
-        </div>
+.image img {
+    align-items: center; 
+    width: 25%;
+    border-radius: 40px;
+    margin-left: 6.8rem;
+margin-top: 1rem;
+}
+ 
 
-      </div>
-</body>
-</html>
+
+#Name h2{
+text-align: center;
+padding-top: 2px;
+font-weight: 700;
+
+}
+
+#Name p{
+    padding:10px 0 5px 0;
+    color: hsl(75, 94%, 57%);
+    text-align: center;
+
+}
+
+#brand{
+text-align: center;
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: center;
+    text-align: center;
+}
+.social-media p{
+    border: 1px solid black;
+    width: 96%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:  hsl(0, 0%, 20%);
+    font-family: "Inter", sans-serif;
+}
+
+.social-media p:hover {
+ background-color: hsl(75, 94%, 57%);
+    color:  hsl(0, 0%, 8%);
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
